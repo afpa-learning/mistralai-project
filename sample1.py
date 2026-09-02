@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from mistralai import Mistral
+from mistralai.client import Mistral
 import os
 import re
 import webbrowser
@@ -70,6 +70,6 @@ def make_website_and_open_in_browser(*, website_input: str, filename: str = "web
 
 
 make_website_and_open_in_browser(
-    website_input="Make me landing page for a retro-games store. Retro-arcade noir some might say",
+    website_input="Make me landing page HTML for a retro-games store. Retro-arcade noir some might say",
     filename="retro_dark.html",
 )

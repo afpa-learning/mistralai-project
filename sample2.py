@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from mistralai import Mistral
+from mistralai.client import Mistral
 import os
 import re
 import webbrowser
@@ -107,7 +107,7 @@ def make_website_and_open_in_browser(*, website_input: str, image_path: str, fil
 
 
 make_website_and_open_in_browser(
-    website_input="Can you make a login page for this website that maintains the same theme of this image",
+    website_input="Can you make a login page HTML for this website that maintains the same theme of this image",
     image_path="input_image.png",
     filename="login_page.html",
 )
